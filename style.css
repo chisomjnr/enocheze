@@ -59,6 +59,7 @@ a,
 nav,
 .nav-links {
   display: flex;
+  font-family: poppins;
 }
 
 nav {
@@ -74,6 +75,7 @@ nav {
 footer nav a{
   background: rgb(255, 222, 160);
   padding: 25px;
+  font-family: poppins;
   border-radius: 20px;
 }
 
@@ -90,12 +92,14 @@ text-decoration: none;
 
 .nav-links {
   gap: 2rem;
+  font-family: poppins;
   list-style: none;
   font-size: 1.5rem;
 }
 
 a {
   color: black;
+  font-family: poppins;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -146,6 +150,7 @@ a:hover {
 .menu-links {
   position: absolute;
   top: 100%;
+  font-family: poppins;
   right: 0;
   background-color: rgb(255, 255, 255);
   width: 300px;
@@ -160,6 +165,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
+  font-family: poppins;
   font-size: 18px;
   color: rgb(31, 31, 31);
   text-decoration: none;
@@ -168,7 +174,9 @@ a:hover {
 
 .menu-links li {
   list-style: none;
+  font-family: poppins;
 }
+
 
 .menu-links.open {
   max-height: 300px;
@@ -250,16 +258,19 @@ margin-bottom: 20px;
 .title {
   font-size: 3rem;
   text-align: center;
+  font-family: poppins;
 }
 
 #profile .section__text__p1 {
   text-align: left;
+  font-family: poppins;
 }
 
 
 
 #profile .section__text__p2 {
   text-align: left;
+  font-family: poppins;
 }
 
 #profile .title {
@@ -362,10 +373,12 @@ background: linear-gradient(45deg, orange, orange);
   line-height: 1.2; 
   text-align: left;
   font-weight: bold;
+  font-family: poppins;
 }
 
 #about .section__text__p1{
   text-align: left;
+  font-family: poppins;
 }
 
 
@@ -379,12 +392,14 @@ background: linear-gradient(45deg, orange, orange);
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  font-family: poppins;
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
   transition: .2s;
+  font-family: poppins;
 }
 
 .about-pic {
@@ -480,6 +495,7 @@ background: linear-gradient(45deg, orange, orange);
   border-color: rgb(163, 163, 163);
   text-align: center;
   transition: .2s ease-in-out;
+  font-family: poppins;
 }
 
 .details-container:hover {
@@ -493,6 +509,7 @@ background: linear-gradient(45deg, orange, orange);
 .section-container {
   gap: 4rem;
   height: 80%;
+  font-family: poppins;
 }
 
 .section__pic-container {
@@ -511,11 +528,13 @@ background: linear-gradient(45deg, orange, orange);
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
+  font-family: poppins;
   margin-bottom: 2rem;
 }
 
 .experience-details-container {
   display: flex;
+  font-family: poppins;
   justify-content: center;
   flex-direction: column;
 }
@@ -526,11 +545,12 @@ background: linear-gradient(45deg, orange, orange);
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
+  font-family: poppins;
   justify-content: space-around;
 }
 
 article {
-
+  font-family: poppins;
   display: flex;
   width: 10rem;
   
@@ -546,6 +566,7 @@ article .icon {
 
 #projects {
   position: relative;
+  font-family: poppins;
 }
 
 .color-container {
@@ -562,6 +583,7 @@ article .icon {
 .project-title {
   font-size: 22px;
   margin: 1rem;
+  font-family: poppins;
   color: black;
 }
 
@@ -571,6 +593,7 @@ article .icon {
 background: rgb(236, 236, 236);
 padding: 10px;
   margin: 1rem;
+  font-family: poppins;
   color: rgb(0, 0, 0);
 }
 
@@ -588,10 +611,12 @@ margin-top: 20px;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  font-family: poppins;
 }
 
 .contact-info-upper-container {
   display: flex;
+  font-family: poppins;
   justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -605,6 +630,7 @@ margin-top: 20px;
 
 .contact-info-upper-container1 {
   display: flex;
+  font-family: poppins;
   justify-content: center;
   border-radius: 2rem;
   /* border: rgb(53, 53, 53) 0.1rem solid; */
@@ -618,9 +644,11 @@ margin-top: 20px;
 
 .contact-info-upper-container1 h1{
   margin-left: 10px;
+  font-family: poppins;
 }
 
 .contact-info-container {
+  font-family: poppins;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -630,6 +658,7 @@ margin-top: 20px;
 
 .contact-info-container p {
   font-size: larger;
+  font-family: poppins;
   margin: 10px;
 }
 
