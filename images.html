@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Enoch Eze | Image Gallery</title>
+    <link rel="stylesheet" href="images.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="images.js" defer></script>
+
+
+    <link rel="shortcut icon" href="assets/letter-e (1).png
+    " type="image/svg+xml">
+  
+  
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    
+    <script>
+        // Update the progress bar based on scroll position
+        function updateProgressBar() {
+            const progressBar = document.getElementById('progress-bar');
+            const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPosition = document.documentElement.scrollTop;
+            const scrollPercentage = (scrollPosition / scrollTotal) * 100;
+            progressBar.style.width = scrollPercentage + '%';
+        }
+    
+        // Attach the updateProgressBar function to the scroll event
+        window.addEventListener('scroll', updateProgressBar);
+    
+        // Initialize the progress bar
+        updateProgressBar();
+    </script>
+    
+
+
+    <div class="fixed-button">
+        <a href="index.html">
+         <i class="fas fa-arrow-left"></i>
+          <strong class="button-message">Go Back to Home</strong>
+        </a>
+      </div> 
+
+
+
+
+
+
+
+ 
+    <div class="lightbox">
+      <div class="wrapper">
+        <header>
+          <div class="details">
+            <i class="uil uil-camera"></i>
+            <span>Image Preview</span>
+          </div>
+          <div class="buttons"><i class="close-icon uil uil-times"></i></div>
+        </header>
+        <div class="preview-img">
+          <div class="img"><img src="" alt="preview-img"></div>
+        </div>
+      </div>
+    </div>
+    <section class="gallery">
+      <ul class="images">
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.05.19 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.05.18 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.05.16 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.05.35 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.04.51 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.05.07 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-04 at 11.47.12 AM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-04 at 11.47.21 AM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.04.26 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.05.21 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.04.06 PM.jpeg" alt="img"></li>
+
+
+
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-04 at 11.46.55 AM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.05.30 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.04.50 PM.jpeg" alt="img"></li>
+
+
+        
+
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.04.44 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.05.04 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.04.54 PM.jpeg" alt="img"></li>
+        <li class="img"><img src="assets/WhatsApp Image 2024-08-05 at 12.05.24 PM.jpeg" alt="img"></li>
+      </ul>
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+    <p style="text-align: center; margin: 20px; font-size: 15px;">Copyright &#169; 2024 <strong style="color: #1f1f1f;">Enoch Eze</strong>. All Rights Reserved.</p>
+    <br>
+    <br>
+    <br>
+    <br><br>
+  </body>
+</html>

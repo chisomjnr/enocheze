@@ -1,0 +1,282 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+h1 {
+  text-align: center;
+  /* margin-top: 50px; */
+  font-weight: bolder;
+  line-height: 1.2;
+  color: white;
+}
+/* Masonry image gallery styling */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery .images {
+  gap: 15px;
+  max-width: 85%;
+  margin: 40px 0;
+  columns: 5 310px;
+  list-style: none;
+}
+.gallery .images .img {
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 14px;
+  border-radius: 15px;
+}
+.gallery .images img {
+  width: 100%;
+  transition:  0.2s ease;
+  
+  filter: grayscale(100%) contrast(150%) brightness(90%);
+  -webkit-filter: grayscale(100%) contrast(150%) brightness(90%); /* For Safari */
+}
+
+.gallery .images .img:hover img {
+  transform: scale(1.1);
+  filter: none;
+}
+
+/* Image lightbox styling */
+.lightbox {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  position: fixed;
+  visibility: hidden;
+  background: rgba(0,0,0,0.65);
+}
+.lightbox.show {
+  visibility: visible;
+}
+.lightbox .wrapper {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  padding: 20px;
+  max-width: 850px;
+  background: #111111;
+  color: white;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: transform 0.1s ease;
+}
+.lightbox.show .wrapper {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.wrapper :where(header, .details) {
+  display: flex;
+  align-items: center;
+}
+.wrapper header {
+  justify-content: space-between;
+}
+header .details i {
+  font-size: 1.7rem;
+}
+header .details span {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+header .buttons i {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  margin-left: 10px;
+  background: orange;
+  font-size: 1.25rem;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+header .buttons i:hover {
+  background: #5f666d;
+}
+.wrapper .preview-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.preview-img .img {
+  max-height: 65vh;
+}
+.preview-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive media query code */
+@media screen and (max-width: 688px) {
+
+h1{
+    font-size: 25px;
+}
+    
+  .lightbox .wrapper {
+    padding: 12px;
+    max-width: calc(100% - 26px);
+  }
+  .wrapper .preview-img {
+    margin-top: 15px;
+  }
+  .gallery .images {
+    max-width: 100%;
+    padding: 0 13px;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fixed-button {
+    position: fixed;
+    bottom: 70px;
+    left: 25px;
+    z-index: 999;
+
+  }
+
+
+  .fixed-button a:hover{
+    background-color: rgb(15, 15, 15);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    
+}
+
+
+@keyframes bounce2 {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-15px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+}
+
+
+  .fixed-button a i{
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+   
+  }
+
+
+  .fixed-button a i:hover {
+    animation: bounce2 2s infinite;
+  }
+  
+  .fixed-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: orange;
+    text-decoration: none;
+    border-radius: 10px;
+    transition:  .2s ease-in-out;
+    box-shadow:var(--shadow-1);
+    position: relative;
+  }
+  
+  .button-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .button-message {
+    position: absolute;
+    bottom: 12px;
+    right: -190px;
+    transform: translateX(-50%);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 9px;
+    border-top-left-radius: 0px;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 12px;
+  
+    opacity: 0;
+    transition:  0.3s ease-in-out;
+    box-shadow: var(--shadow-1)
+    
+  }
+  
+  .fixed-button a:hover .button-message {
+    opacity: 1;
+   
+    background-color: orange;
+    color: #ffffff;
+
+    transition: background-color 0.3s ease;
+  }
+  
+
+
+  
+#progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #ffffff3d;
+    z-index: 99;
+  }
+  
+  #progress-bar {
+    height: 100%;
+    background: orange;
+    width: 0%;
+    transition: width 0.1s;
+  }
+  
+  
